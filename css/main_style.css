@@ -81,11 +81,11 @@ body {
 }
 .top_scroll .gnb_wrap li:hover a{
     color: #3D5C92;
-    border-bottom: 4px solid #EB9128;
+    border-bottom: 4px solid #3D5C92;
 }
 .top_scroll .gnb_wrap li:nth-last-child(1):hover a {
-    border-bottom: 4px solid #EB9128;
     color: #3D5C92;
+    border-bottom: 4px solid #3D5C92;
 }
 
 /* header */
@@ -426,14 +426,14 @@ body {
 
 .section{
     position: relative;
-    height: 1000px;
+    height: 800px;
 }
 
 .current_box{
     display: block;
-    width: 830px;
-    height: 540px;
-    padding: 110px 0 0 130px;
+    width: 780px;
+    height: 450px;
+    padding: 90px 0 0 100px;
     box-sizing: border-box;
     background-color: #fff;
     transition: all 0.5s;
@@ -502,7 +502,8 @@ body {
 
 .poster{
     position: absolute;
-    height: 700px;
+    width: 1200px;
+    height: 500px;
 }
 .poster img{
     display: block;
@@ -532,7 +533,7 @@ body {
 }
 .animated-title .track {
     position: absolute;
-    top: -90px;
+    top: -70px;
     white-space: nowrap;
     will-change: transform;
     animation: marquee 100s linear infinite;
@@ -549,7 +550,7 @@ body {
 #current{
     width: 1620px;
     margin: 0 auto;
-    height: 3000px;
+    height: 2500px;
     padding: 200px 0;
 }
 .inner_current{
@@ -558,67 +559,169 @@ body {
 }
 
 .title_bg{
+    width: 102px;
+    height: 53px;
     position: absolute;
     top: 30px;
-    left: 0;
+    left: -100px;
     z-index: 1;
 }
-.title_bg li:nth-child(1){
+.title_bg img{
+    display: block;
+}
+.title_bg> img{
+    width: 360px;
+    height: 89px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -20px;
+    left: 120px;
     z-index: 1;
 }
-.title_bg li:nth-child(1){
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
 
 .section1_poster{
     top: 155px;
     right: -289px;
     z-index: 3;
-    width: 1300px;
 }
 .box1{
     position: absolute;
-    top: 350px;
+    top: 280px;
     left: -76px;
     z-index: 5;
 }
 
 .section2_poster{
-    top: 155px;
+    top: 130px;
     left: -289px;
     z-index: 3;
-    width: 1300px;
 }
 .box2{
     position: absolute;
-    top: 350px;
+    top: 260px;
     right: -76px;
     z-index: 5;
 }
 
 .section3_poster{
-    top: 155px;
+    top: 130px;
     right: -289px;
     z-index: 3;
-    width: 1200px;
 }
 .box3{
     position: absolute;
-    top: 350px;
+    top: 260px;
     left: -76px;
     z-index: 5;
 }
 
 
 /* facilities */
-#facilities{
-    height: 2000px;
-    background-color: #eee;
+
+
+/* facilities 공통 시작 */
+.fc_photo{
+    width: 415px;
+    /* height: 960px; */
+    margin-right: 23px;
+    display: inline-block;
+    vertical-align: middle;
 }
+
+.fc_photo ul li{
+    width: 415px;
+    height: 300px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.fc_photo img{
+    display: block;
+    width: 100%;
+    width: 415px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.facilities_cover{
+    width: 415px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #3d5c92ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+}
+.fc_cover_txt{
+}
+.fc_cover_tt{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin: 80px 0 20px;
+}
+.fc_cover_eng{
+    font-size: 26px;
+    font-weight: 600;
+    color: #ccc;
+}
+a.fc_cover_btn{
+    display: inline-block;
+    padding: 4px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 40px;
+}
+.fc_photo ul li:hover .facilities_cover{
+    opacity: 1;
+    transition: all 0.4s;
+}
+.fc_cover_btn:hover{
+    background-color: #fff;
+    color: #3D5C92;
+}
+
+
+/* facilities 공통 끝 */
+
+#facilities{
+    height: 1150px;
+    background: url(../images/main/facilities/facilities_bg_circle.png) no-repeat top -170px center;
+}
+.inner_facilities{
+    width: 1324px;
+    margin: 0 auto;
+    position: relative;
+}
+#facilities .title{
+    text-align: left;
+    margin-top: 100px;
+}
+.facilities_tt{
+    display: inline-block;
+    margin-right: 30px;
+}
+.facilities_txt{
+    font-size: 20px;
+    padding-top: 65px;
+}
+.facilities_box{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: 9;
+    /* opacity: 0.5; */
+}
+
+.fc_photo1{
+    height: 300px;
+    position: relative;
+}
+.fc_photo2{
+    height: 630px;
+}
+.fc_photo3{
+    height: 960px;
+}
+
