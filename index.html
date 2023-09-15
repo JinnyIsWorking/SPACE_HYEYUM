@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/main_style.css">
     <!-- js -->
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
@@ -170,8 +172,10 @@
             <div id="current">
                 <div class="inner_current">
                     <div class="title">
-                        <h2>현재 전시</h2>
-                        <p>Current Exhibition</p>
+                        <div class="code code--left" data-aos="fade-up" data-aos-duration="1000">
+                            <h2>현재 전시</h2>
+                            <p>Current Exhibition</p>
+                        </div>
                         <div class="title_bg">
                             <ul>
                                 <li>
@@ -187,83 +191,176 @@
                             <img src="./images/main/current/CURRENT.png" alt="currnet">
                         </div> <!--title_bg-->
                     </div> <!--title-->
-                    <div class="section1 section">
-                        <a href="#" class="current_box box1">
-                            <h3 class="current_tt">
-                                2023 부산바다 사진전
-                            </h3>
-                            <span class="now">Now</span>
-                            <p class="eng_tt">BUSAN SEA PHOTO EXHIBITION</p>
-                            <p class="sub_tt">부산에서 만나는 그 찰나의 시간</p>
-                            <p class="date">2023. 08.01 ~ 2023. 08. 31</p>
-                            <div class="more_btn">
-                                <p class="more">자세히보기 →</p>
-                                <div class="btn_circle"></div>
+                    <div class="code code--small code--right" data-aos="zoom-in-up">
+                        <div class="section1 section">
+                            <a href="#" class="current_box box1">
+                                <h3 class="current_tt">
+                                    2023 부산바다 사진전
+                                </h3>
+                                <span class="now">Now</span>
+                                <p class="eng_tt">BUSAN SEA PHOTO EXHIBITION</p>
+                                <p class="sub_tt">부산에서 만나는 그 찰나의 시간</p>
+                                <p class="date">2023. 08.01 ~ 2023. 08. 31</p>
+                                <div class="more_btn">
+                                    <p class="more">자세히보기 →</p>
+                                    <div class="btn_circle"></div>
+                                </div>
+                            </a> <!--current_box-->
+                            <div class="section1_poster poster">
+                                <img src="./images/main/current/current_poster1.jpg" alt="poster">
                             </div>
-                        </a> <!--current_box-->
-                        <div class="section1_poster poster">
-                            <img src="./images/main/current/current_poster1.jpg" alt="poster">
-                        </div>
-                    </div> <!--section1-->
-                    <div class="animated-title">
-                        <div class="track">
-                            <img src="./images/main/current/SPACEHYEYUM_b_long.png" alt="SPACEHYEYUM">
-                        </div> <!--track-->
-                    </div> <!--animated-title-->
-                    <div class="section2 section">
-                        <a href="#" class="current_box box2">
-                            <h3 class="current_tt">
-                                미술관에 피는 꽃
-                            </h3>
-                            <span class="now">Now</span>
-                            <p class="eng_tt">Flower is You</p>
-                            <p class="sub_tt">나라는 꽃이 피어날 때</p>
-                            <p class="date">2023. 08. 29 ~ 2023. 10. 12</p>
-                            <div class="more_btn">
-                                <p class="more">자세히보기 →</p>
-                                <div class="btn_circle"></div>
+                        </div> <!--section1-->
+                        <div class="animated-title">
+                            <div class="track">
+                                <img src="./images/main/current/SPACEHYEYUM_b_long.png" alt="SPACEHYEYUM">
+                            </div> <!--track-->
+                        </div> <!--animated-title-->
+                    </div> <!--section1 AOS-->
+                    <div class="code code--small code--right" data-aos="zoom-in-up">
+                        <div class="section2 section">
+                            <a href="#" class="current_box box2">
+                                <h3 class="current_tt">
+                                    미술관에 피는 꽃
+                                </h3>
+                                <span class="now">Now</span>
+                                <p class="eng_tt">Flower is You</p>
+                                <p class="sub_tt">나라는 꽃이 피어날 때</p>
+                                <p class="date">2023. 08. 29 ~ 2023. 10. 12</p>
+                                <div class="more_btn">
+                                    <p class="more">자세히보기 →</p>
+                                    <div class="btn_circle"></div>
+                                </div>
+                            </a> <!--current_box-->
+                            <div class="section2_poster poster">
+                                <img src="./images/main/current/current_poster2.jpg" alt="poster">
                             </div>
-                        </a> <!--current_box-->
-                        <div class="section2_poster poster">
-                            <img src="./images/main/current/current_poster2.jpg" alt="poster">
-                        </div>
-                    </div> <!--section2-->
-                    <div class="animated-title">
-                        <div class="track">
-                            <img src="./images/main/current/SPACEHYEYUM_o_long.png" alt="SPACEHYEYUM">
-                        </div> <!--track-->
-                    </div> <!--animated-title-->
-                    <div class="section3 section">
-                        <a href="#" class="current_box box3">
-                            <h3 class="current_tt">
-                                요시고 사진전
-                            </h3>
-                            <span class="now">Now</span>
-                            <p class="eng_tt">Photographs by YOSIGO</p>
-                            <p class="sub_tt">따뜻한 휴일의 기록</p>
-                            <p class="date">2023. 05. 27 ~ 2023. 09. 03</p>
-                            <div class="more_btn">
-                                <p class="more">자세히보기 →</p>
-                                <div class="btn_circle"></div>
+                        </div> <!--section2-->
+                        <div class="animated-title">
+                            <div class="track">
+                                <img src="./images/main/current/SPACEHYEYUM_o_long.png" alt="SPACEHYEYUM">
+                            </div> <!--track-->
+                        </div> <!--animated-title-->
+                    </div> <!--section2 AOS-->
+                    <div class="code code--small code--right" data-aos="zoom-in-up">
+                        <div class="section3 section">
+                            <a href="#" class="current_box box3">
+                                <h3 class="current_tt">
+                                    요시고 사진전
+                                </h3>
+                                <span class="now">Now</span>
+                                <p class="eng_tt">Photographs by YOSIGO</p>
+                                <p class="sub_tt">따뜻한 휴일의 기록</p>
+                                <p class="date">2023. 05. 27 ~ 2023. 09. 03</p>
+                                <div class="more_btn">
+                                    <p class="more">자세히보기 →</p>
+                                    <div class="btn_circle"></div>
+                                </div>
+                            </a> <!--current_box-->
+                            <div class="section3_poster poster">
+                                <img src="./images/main/current/current_poster3.jpg" alt="poster">
                             </div>
-                        </a> <!--current_box-->
-                        <div class="section3_poster poster">
-                            <img src="./images/main/current/current_poster3.jpg" alt="poster">
-                        </div>
-                    </div> <!--section3-->
-                    <div class="animated-title">
-                        <div class="track">
-                            <img src="./images/main/current/SPACEHYEYUM_b_long.png" alt="SPACEHYEYUM">
-                        </div> <!--track-->
-                    </div> <!--animated-title-->
+                        </div> <!--section3-->
+                        <div class="animated-title">
+                            <div class="track">
+                                <img src="./images/main/current/SPACEHYEYUM_b_long.png" alt="SPACEHYEYUM">
+                            </div> <!--track-->
+                        </div> <!--animated-title-->
+                    </div> <!--section2 AOS-->
                 </div> <!--inner_current-->
             </div> <!--current-->
             <div id="facilities">
-
+                <div class="inner_facilities">
+                    <div class="title">
+                        <div class="code code--left" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="facilities_tt">주요시설</h2>
+                            <p class="facilities_tt">Facilities</p>
+                        </div>
+                    </div> <!--title-->
+                    <p class="facilities_txt">공간혜윰에서 다양한 공간을 만나보세요</p>
+                    <div class="facilities_box">
+                        <div class="fc_photo1 fc_photo">
+                            <ul>
+                                <li>
+                                    <img src="./images/main/facilities/facilities_community.jpg" alt="facilities">
+                                    <div class="facilities_cover">
+                                        <div class="fc_cover_txt">
+                                            <p class="fc_cover_tt">커뮤니티룸</p>
+                                            <p class="fc_cover_eng">Community Room</p>
+                                            <a href="#" class="fc_cover_btn">자세히보기</a>
+                                        </div> <!--fc_cover_txt-->
+                                    </div> <!--facilities_cover-->
+                                </li>
+                            </ul>
+                        </div> <!--fc_photo1-->
+                        <div class="fc_photo2 fc_photo">
+                            <ul>
+                                <li>
+                                    <img src="./images/main/facilities/facilities_gallery.jpeg" alt="facilities">
+                                    <div class="facilities_cover">
+                                        <div class="fc_cover_txt">
+                                            <p class="fc_cover_tt">갤러리혜윰</p>
+                                            <p class="fc_cover_eng">GALLERY HYEYUM</p>
+                                            <a href="#" class="fc_cover_btn">자세히보기</a>
+                                        </div> <!--fc_cover_txt-->
+                                    </div> <!--facilities_cover-->
+                                </li>
+                                <li>
+                                    <img src="./images/main/facilities/facilities_designstore.jpg" alt="facilities">
+                                    <div class="facilities_cover">
+                                        <div class="fc_cover_txt">
+                                            <p class="fc_cover_tt">디자인스토어</p>
+                                            <p class="fc_cover_eng">Design Store</p>
+                                            <a href="#" class="fc_cover_btn">자세히보기</a>
+                                        </div> <!--fc_cover_txt-->
+                                    </div> <!--facilities_cover-->
+                                </li>
+                            </ul>
+                        </div> <!--fc_photo2-->
+                        <div class="fc_photo3 fc_photo">
+                            <ul>
+                                <li>
+                                    <img src="./images/main/facilities/facilities_cafe.jpg" alt="facilities">
+                                    <div class="facilities_cover">
+                                        <div class="fc_cover_txt">
+                                            <p class="fc_cover_tt">카페 혜윰</p>
+                                            <p class="fc_cover_eng">Cafe HYEYUM</p>
+                                            <a href="#" class="fc_cover_btn">자세히보기</a>
+                                        </div> <!--fc_cover_txt-->
+                                    </div> <!--facilities_cover-->
+                                </li>
+                                <li>
+                                    <img src="./images/main/facilities/facilities_library.jpg" alt="facilities">
+                                    <div class="facilities_cover">
+                                        <div class="fc_cover_txt">
+                                            <p class="fc_cover_tt">혜윰도서관</p>
+                                            <p class="fc_cover_eng">HYEYUM Library</p>
+                                            <a href="#" class="fc_cover_btn">자세히보기</a>
+                                        </div> <!--fc_cover_txt-->
+                                    </div> <!--facilities_cover-->
+                                </li>
+                                <li>
+                                    <img src="./images/main/facilities/facilities_garden.jpg" alt="facilities">
+                                    <div class="facilities_cover">
+                                        <div class="fc_cover_txt">
+                                            <p class="fc_cover_tt">가든 혜윰</p>
+                                            <p class="fc_cover_eng">Garden HYEYUM</p>
+                                            <a href="#" class="fc_cover_btn">자세히보기</a>
+                                        </div> <!--fc_cover_txt-->
+                                    </div> <!--facilities_cover-->
+                                </li>
+                            </ul>
+                        </div> <!--fc_photo3-->
+                    </div> <!--facilities_box-->
+                </div> <!--inner_facilities-->
             </div> <!--facilities-->
         </div> <!--container-->
     </div> <!--wrap-->
 
     <!-- js 제어 -->
     <script src="./js/main_script.js"></script>
+    <!-- AOS js CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
