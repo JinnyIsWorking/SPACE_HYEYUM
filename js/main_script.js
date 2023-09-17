@@ -33,13 +33,24 @@ $(".gnb_wrap li").mouseleave(function(){
 
 // scroll 
 $(window).scroll(function(){
-    if($(this).scrollTop() > 780){
+    if($(this).scrollTop() > 200){
         $('#top').addClass('top_scroll')
     }else{
         $('#top').removeClass('top_scroll')
     }
 });
 
+// scroll updown header
+$(function() {
+    var prevScrollTop = 0;
+    document.addEventListener("scroll", function(){
+        var nowScrollTop = $(window).scrollTop(); //현재 스크롤 위치를 nowScrollTop 에 저장
+        if (nowScrollTop > prevScrollTop){ $('#top').addClass('active'); } 
+        // 스크롤 방향(Down) 내릴때 -> 헤더에 active 클래스 추가
+        else { $('#top').removeClass('active'); } // 스크롤 방향(Up) 올릴때 -> 헤더에 active 클래스 제거
+        prevScrollTop = nowScrollTop;  // prevScroll, nowScrollTop 조건 판단 후, 현재 스크롤값을 prevScrollTop 에 저장
+    });
+  });
 
 // current bg
 $('.title_bg ul li').hide();
