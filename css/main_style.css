@@ -55,7 +55,6 @@ body {
 /* wrap */
 #wrap {
     min-width: 1324px;
-    overflow: hidden;
     position: relative;
 }
 
@@ -261,6 +260,14 @@ body {
         transform: scale(1) translate(0);
     }
 }
+@keyframes person{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translate(15px);
+    }
+}
 
 #banner{
     width: 100%;
@@ -453,7 +460,7 @@ body {
 
 .fc_photo{
     width: 415px;
-    margin-right: 23px;
+    margin-right: 34px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -466,6 +473,7 @@ body {
 }
 .fc_photo3{
     height: 960px;
+    margin-right: 0;
 }
 
 .fc_photo ul li{
@@ -538,6 +546,11 @@ a.fc_cover_btn{
 #current{
     height: 2570px;
     background: url(../images/main/current/current_bg.png) no-repeat center top -200px;
+}
+.current_wrap{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 #current .title{
     text-align: center;
@@ -696,10 +709,13 @@ a.fc_cover_btn{
     margin-bottom: 50px;
 }
 .more_program{
-    display: inline-block;
+    display: block;
     color: #fff;
     font-size: 22px;
     opacity: 0.7;
+}
+.more_program span{
+    display: inline-block;
 }
 .more_program img{
     display: inline-block;
@@ -879,11 +895,13 @@ margin: 6px 2px !important;
 }
 
 .more_rental{
-    display: inline-block;
+    display: block;
     color: #fff;
     font-size: 22px;
     opacity: 0.7;
 
+}.more_rental span{
+    display: inline-block;
 }
 .more_rental img{
     display: inline-block;
