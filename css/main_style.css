@@ -327,12 +327,16 @@ body {
     }
 }
 
+#banner .inner{
+    position: relative;
+}
 .slogan_wrap{
+    width: 100%;
     position: absolute;
     top: 100px;
     left: 50%;
     z-index: 5;
-    margin-left: -233px;
+    margin-left: -662px;
 }
 .slogan{
     font-size: 50px;
@@ -355,7 +359,7 @@ body {
     background-color: #3D5C92;
     position: absolute;
     top: 85px;
-    right: -7px;
+    left: 542px;
     z-index: -2;
     opacity: 0;
     animation: slogan_box 1.5s 0.2s forwards;
