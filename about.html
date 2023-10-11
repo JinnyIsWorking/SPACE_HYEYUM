@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <title>SPACE:HYEYUM</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_32x32.png">
+    <!--webfont-->
+    <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/about_style.css">
+    <!-- js code -->
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- swiper_css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="wrap"> <!--전체-->
+        <div id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./images/header/logo.png" alt="logo">
+                    </a>
+                </h1> <!--logo-->
+                <ul class="util">
+                    <li>
+                        <a href="#">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="#">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/header/search.svg" alt="search_icon" class="search"></a>
+                    </li>
+                </ul> <!--util-->
+                <div id="gnb">
+                    <div class="nav">
+                        <ul class="gnb_wrap">
+                            <li>
+                                <a href="about.html" class="on">공간혜윰</a>
+                            </li>
+                            <li>
+                                <a href="facilities.html">시설소개</a>
+                            </li>
+                            <li>
+                                <a href="program.html">프로그램</a>
+                            </li>
+                            <li>
+                                <a href="rental.html">대관안내</a>
+                            </li>
+                            <li>
+                                <a href="use.html">이용안내</a>
+                            </li>
+                        </ul> <!--gnb_wrap-->
+                        <div class="submenu">
+                            <div class="inner_submenu">
+                                <div class="submenu_text">
+                                    <ul>
+                                        <li>
+                                            <a href="about.html#about">소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html#vision">비전</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html#brand">브랜드</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html#history">연혁</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="facilities.html#floormap">층별안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="facilities.html#information">공간안내</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="program.html#program">전시 & 행사</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="rental.html#facilities">대관시설</a>
+                                        </li>
+                                        <li>
+                                            <a href="rental.html#process">대관절차</a>
+                                        </li>
+                                        <li>
+                                            <a href="rental.html#inquiry">대관문의</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="use.html#guide">이용안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="use.html#faq">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="use.html#map">오시는길</a>
+                                        </li>
+                                    </ul>
+                                </div> <!--submenu_text-->
+                            </div> <!--inner_submenu-->
+                        </div> <!--submenu-->
+                    </div> <!--nav-->
+                </div> <!--gnb-->
+            </div> <!--inner-->
+        </div> <!--header-->
+        <div id="banner">
+            <div class="inner">
+                <div class="code code--left title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <h2>About</h2>
+                    <p>공간혜윰을 소개합니다</p>
+                </div> <!--title-->
+            </div> <!--inner-->
+        </div> <!--banner-->
+        <div id="about">
+            <div class="inner">
+                <div class="code code--left" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <div class="section">
+                        <div class="slogan">
+                            <div class="quotation">
+                                <img src="./images/About/quotation_s.png" alt="quotation">
+                            </div> <!--quotation-->
+                            <h3>우리의 생각이 만나는 공간</h3>
+                            <div class="quotation">
+                                <img src="./images/About/quotation_e.png" alt="quotation">
+                            </div> <!--quotation-->
+                        </div> <!--slogan-->
+                        <p>
+                            우리가 가진 생각들을 하나하나 모아 당신의 눈과 생각을 즐겁게 만들어 줄
+                            <br>새로운 공간과 문화를 만들어가기 위해 탄생한 복합문화공간.
+                            <br>생각으로 만들어가는 공간혜윰에 오신 것을 환영합니다.
+                        </p>
+                        <div class="about_logo">
+                            <img src="./images/About/about_logo.png" alt="logo">
+                        </div> <!--about_logo-->
+                    </div> <!--section-->
+                </div>
+                <div class="section1">
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        <div class="about_text about_left">
+                            <h3>개인의 다양한 생각을
+                                <br>즐겁게 <span>소통</span>하고자 합니다.
+                            </h3>
+                            <p>
+                                혜윰은 <span>생각</span>이라는 의미를 가진 우리말로,
+                                <br>공간혜윰은 <span>사람들의 생각이 만나는 곳</span>이라는 의미를 가진
+                                <br>복합 문화 커뮤니티 공간입니다.
+                                <br>
+                                <br>개인을 중요시하는 도시에 누구나 함께 살고 일하지만
+                                <br>다양한 사람들의 생각을 통해 우리가 잠시 머물 수 있고 즐길 수 있는
+                                <br>공간과 콘텐츠를 담은 도심 속의 힐링공간이 되고자 합니다.
+                            </p>
+                        </div> <!--about_text-->
+                    </div>
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <div class="about_illust about_right">
+                            <img src="./images/About/about_illust1.png" alt="about">
+                        </div> <!--about_illust-->
+                    </div>
+                </div> <!--section1-->
+                <div class="section1 section2">
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        <div class="about_text about_text2 about_right">
+                            <h3>새로운 어반 라이프 스타일,
+                                <br><span>함께</span>의 가치에 집중합니다.
+                            </h3>
+                            <p>
+                                새로운 어반 라이프 스타일로 사람과 사람이 만나 커뮤니티가 형성되고,
+                                <br>이를 통해 새로운 가치를 창출해 사람들에게 행복을 선사하며
+                                <br>일상과 여가를 동시에 영위할 수 있습니다.
+                                <br>
+                                <br>공간혜윰은 지역에 필요한 새로운 공간과 콘텐츠를 제공하며,
+                                <br>커뮤니티와 문화생활을 통한 로컬 문화 활성화로
+                                <br>도시의 삶을 더욱 풍요롭게 만들 수 있는
+                                <br>지역사회 함께 상생하는 것을 추구합니다.
+                            </p>
+                        </div> <!--about_text-->
+                    </div>
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">
+                        <div class="about_illust about_illust2 about_left">
+                            <img src="./images/About/about_illust2.png" alt="about">
+                        </div> <!--about_illust-->
+                    </div>
+                </div> <!--section2-->
+            </div> <!--inner-->
+        </div> <!--about-->
+        <div id="vision">
+            <div class="vision_bg">
+                <div class="code code--left" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="400">
+                    <div class="inner">
+                        <div class="vision_title">
+                            <h3>비 전</h3>
+                            <p>공간혜윰이 추구하는 가치</p>
+                        </div> <!--vision_title-->
+                        <div class="vision_wrap">
+                            <ul>
+                                <li>
+                                    <img src="./images/About/vision_icon1.svg" alt="vision_icon">
+                                    <strong class="vision_tt">다가기 쉬운 공간</strong>
+                                    <p>
+                                        누구나 다양하게 이용가능한
+                                        <br>개방적 공간으로 함께 어울려
+                                        <br>소통할 수 있는 문화플랫폼
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="./images/About/vision_icon2.svg" alt="vision_icon">
+                                    <strong class="vision_tt">함께 만드는 공간</strong>
+                                    <p>
+                                        지역민, 예술가, 전문가 등과
+                                        <br>협업을 통해 문화적 역량이
+                                        <br>함께 성정할 수 있는 문화공동체
+                                    </p>
+                                </li>
+                                <li>
+                                    <img src="./images/About/vision_icon3.svg" alt="vision_icon">
+                                    <strong class="vision_tt">문화가 시작되는 공간</strong>
+                                    <p>
+                                        상상력이 현실이 되는 공간으로
+                                        <br>창의적 콘텐츠와 커뮤니티를 통해
+                                        <br>생산되는 문화 거점 공간 구축
+                                    </p>
+                                </li>
+                            </ul>
+                        </div> <!--vision_wrap-->
+                    </div> <!--inner-->
+                </div>
+            </div>
+        </div> <!--vision-->
+        <div id="brand">
+            <div class="inner">
+                <div class="code code--left content_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                    <h2 class="left_title">브랜드</h2>
+                    <p class="left_engtitle">Brand Identity</p>
+                </div> <!--content_title-->
+                <div class="code code--left" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <p class="subtitle">BI 소개</p>
+                    <p class="subtitle_txt">
+                        ‘공간혜윰’의 한글을 이용한 타이포그래피 로고타입으로 양 끝 ‘공’, ‘윰’의 ‘ㅇ’에 포인트를 주어 서로 다른 사람이 한 공간에 모이는 것을 상징하며, 정형화된 한글의
+                        구조를
+                        조정하여
+                        창의적인 생각과 영감의 공간임을 표현하고, 글자들이 연결되는 느낌으로 생각이 이어지는 만남을 표현
+                    </p>
+                </div>
+                <div class="code code--left" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
+                    <div class="grid">
+                        <div class="grid_logo">
+                            <img src="./images/About/brand_logo.png" alt="brand_logo">
+                            <img src="./images/About/brand_eng_logo.png" alt="eng_logo">
+                        </div> <!--grid_logo-->
+                    </div> <!--grid-->
+                    <div class="color_logo">
+                        <ul class="color_box">
+                            <li class="blue">
+                                <img src="./images/About/brand_logo_o.png" alt="color_logo">
+                            </li>
+                            <li class="orange">
+                                <img src="./images/About/brand_logo_b.png" alt="color_logo">
+                            </li>
+                            <li class="gray">
+                                <img src="./images/About/brand_logo_o.png" alt="color_logo">
+                            </li>
+                        </ul> <!--color_box-->
+                    </div> <!--color_logo-->
+                </div>
+                <div class="code code--left" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <p class="subtitle">컬러시스템</p>
+                    <p class="subtitle_txt">
+                        편안한 느낌의 파란색을 메인컬러로 이용하고 활발하고 창의적인 주황색을 서브컬러로 정하여 메인컬러와 대비되면서 강조될 수 있도록 하였으며, 또 다른 서브컬러 회색과
+                        전체 컬러의 채도를 낮춰 현대적인 느낌을 나타냄
+                    </p>
+                </div>
+                <div class="code code--left" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
+                    <ul class="color_system">
+                        <li>
+                            <p>Primary Color</p>
+                            <div class="p_color">
+                                <div class="gradation"></div>
+                                <div class="color_info">
+                                    <p>C85 M65 Y20</p>
+                                    <p>R61 G92 B146</p>
+                                    <p>#3D5C92</p>
+                                </div> <!--color_info-->
+                            </div> <!--gradation-->
+                        </li>
+                        <li>
+                            <p>Secondary Color1</p>
+                            <div class="s1_color">
+                                <div class="gradation"></div>
+                                <div class="color_info">
+                                    <p>C5 M50 Y90</p>
+                                    <p>R235 G145 B40</p>
+                                    <p>#EB9128</p>
+                                </div> <!--color_info-->
+                            </div> <!--gradation-->
+                        </li>
+                        <li>
+                            <p>Secondary Color2</p>
+                            <div class="s2_color">
+                                <div class="gradation"></div>
+                                <div class="color_info">
+                                    <p>K80</p>
+                                    <p>R87 G87 B86</p>
+                                    <p>#575756</p>
+                                </div> <!--color_info-->
+                            </div> <!--gradation-->
+                        </li>
+                    </ul> <!--color_system-->
+                </div>
+            </div> <!--inner-->
+        </div> <!--brand-->
+        <div id="history">
+            <div class="inner">
+                <div class="code code--left content_title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                    <h2 class="center_title">공간혜윰을 만들어 온 여정</h2>
+                </div>
+                <div class="history_bar">
+                    <img src="./images/About/history_bar.png" alt="history_bar">
+                </div> <!--history_bar-->
+                <div class="year_wrap year_wrap1 year_right">
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="history_txt">
+                            <div class="history_title">
+                                <h3>공간혜윰 업무협약 체결</h3>
+                            </div> <!--history_title-->
+                            <ul>
+                                <li>도시문화 상생협력 업무협약 체결</li>
+                                <li>예술·나눔 공감 프로젝트 업무협약 체결</li>
+                                <li>지역 문화예술 활성화를 위한 업무협약 체결</li>
+                            </ul>
+                        </div> <!--history_txt-->
+                    </div> <!-- AOS_effect -->
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="history_photo">
+                            <div class="year_line"></div>
+                            <h3 class="year">2022</h3>
+                            <div class="photo_wrap">
+                                <img src="./images/About/history7.jpg" alt="history">
+                                <img src="./images/About/history8.jpg" alt="history">
+                            </div> <!--photo_wrap-->
+                        </div> <!--history_photo-->
+                    </div> <!-- AOS_effect -->
+                </div> <!--year_wrap-->
+                <div class="year_wrap year_wrap2 year_left">
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="history_txt">
+                            <div class="history_title">
+                                <h3>공간혜윰 개관</h3>
+                            </div> <!--history_title-->
+                            <ul>
+                                <li>공간혜윰 개관식(21.3)</li>
+                            </ul>
+                        </div> <!--history_txt-->
+                    </div> <!-- AOS_effect -->
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="history_photo">
+                            <div class="year_line"></div>
+                            <h3 class="year">2021</h3>
+                            <div class="photo_wrap">
+                                <img src="./images/About/history5.jpg" alt="history">
+                                <img src="./images/About/history6.jpg" alt="history">
+                            </div> <!--photo_wrap-->
+                        </div> <!--history_photo-->
+                    </div> <!-- AOS_effect -->
+                </div> <!--year_wrap-->
+                <div class="year_wrap year_wrap3 year_right">
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="history_txt">
+                            <div class="history_title">
+                                <h3>공간혜윰 건립공사</h3>
+                            </div> <!--history_title-->
+                            <ul>
+                                <li>공간혜윰 건립공사 착공(18.4.)</li>
+                                <li>공간혜윰 건립공사 준공(20.11)</li>
+                            </ul>
+                        </div> <!--history_txt-->
+                    </div> <!-- AOS_effect -->
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="history_photo">
+                            <div class="year_line"></div>
+                            <h3 class="year">2018 ~ 2020</h3>
+                            <div class="photo_wrap">
+                                <img src="./images/About/history3.jpg" alt="history">
+                                <img src="./images/About/history4.jpg" alt="history">
+                            </div> <!--photo_wrap-->
+                        </div> <!--history_photo-->
+                    </div> <!-- AOS_effect -->
+                </div> <!--year_wrap-->
+                <div class="year_wrap year_wrap4 year_left">
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="history_txt">
+                            <div class="history_title">
+                                <h3>공간혜윰 건립 준비</h3>
+                            </div> <!--history_title-->
+                            <ul>
+                                <li>지역사회센터 이전 부지 공간 활용 방안 연구</li>
+                                <li>부지 활용방안 전문가, 문화예술인,
+                                    지역주민의견 수렴
+                                </li>
+                                <li>지역사회센터 이전 부지 매입</li>
+                            </ul>
+                        </div> <!--history_txt-->
+                    </div> <!-- AOS_effect -->
+                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="history_photo">
+                            <div class="year_line"></div>
+                            <h3 class="year">2017</h3>
+                            <div class="photo_wrap">
+                                <img src="./images/About/history1.jpg" alt="history">
+                                <img src="./images/About/history2.jpg" alt="history">
+                            </div> <!--photo_wrap-->
+                        </div> <!--history_photo-->
+                    </div> <!-- AOS_effect -->
+                </div> <!--year_wrap-->
+            </div> <!--inner-->
+        </div> <!--history-->
+        <div id="footer">
+            <div class="inner">
+                <div class="f_logo">
+                    <img src="./images/footer/footer_logo.png" alt="footer_logo">
+                </div>
+                <div class="footer_txt">
+                    <ul class="link">
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">영상정보처리운영관리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이메일정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                    </ul>
+                    <p>부산광역시 기장군 기장읍 기장해안로 200 공간혜윰 &nbsp;&nbsp; spacehyeyum@email.com &nbsp;&nbsp; 문의 051)123-4567
+                    </p>
+                    <p>Copyright © SPACEHYEYUM All Rights Reserved.</p>
+                </div> <!--footer_txt-->
+                <ul class="sns">
+                    <li>
+                        <a href="#">
+                            <img src="./images/footer/insta_icon.png" alt="insta_icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/footer/youtube_icon.png" alt="youtube_icon">
+                        </a>
+                    </li>
+                </ul>
+            </div> <!--inner-->
+        </div> <!--footer-->
+        <div id="top_btn">
+            <a href="#wrap"></a>
+        </div> <!--top_btn-->
+    </div> <!--wrap-->
+
+    <!-- AOS js CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- js 제어 -->
+    <script src="./js/about_script.js"></script>
+</body>

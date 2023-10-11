@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <title>SPACE:HYEYUM</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_32x32.png">
+    <!--webfont-->
+    <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/program_style.css">
+    <!-- js code -->
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- swiper_css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="wrap"> <!--전체-->
+        <div id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./images/header/logo.png" alt="logo">
+                    </a>
+                </h1> <!--logo-->
+                <ul class="util">
+                    <li>
+                        <a href="#">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="#">ENG</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/header/search.svg" alt="search_icon" class="search"></a>
+                    </li>
+                </ul> <!--util-->
+                <div id="gnb">
+                    <div class="nav">
+                        <ul class="gnb_wrap">
+                            <li>
+                                <a href="about.html">공간혜윰</a>
+                            </li>
+                            <li>
+                                <a href="facilities.html">시설소개</a>
+                            </li>
+                            <li>
+                                <a href="program.html" class="on">프로그램</a>
+                            </li>
+                            <li>
+                                <a href="rental.html">대관안내</a>
+                            </li>
+                            <li>
+                                <a href="use.html">이용안내</a>
+                            </li>
+                        </ul> <!--gnb_wrap-->
+                        <div class="submenu">
+                            <div class="inner_submenu">
+                                <div class="submenu_text">
+                                    <ul>
+                                        <li>
+                                            <a href="about.html#about">소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html#vision">비전</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html#brand">브랜드</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html#history">연혁</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="facilities.html#floormap">층별안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="facilities.html#information">공간안내</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="program.html#program">전시 & 행사</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="rental.html#facilities">대관시설</a>
+                                        </li>
+                                        <li>
+                                            <a href="rental.html#process">대관절차</a>
+                                        </li>
+                                        <li>
+                                            <a href="rental.html#inquiry">대관문의</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="use.html#guide">이용안내</a>
+                                        </li>
+                                        <li>
+                                            <a href="use.html#faq">자주묻는질문</a>
+                                        </li>
+                                        <li>
+                                            <a href="use.html#map">오시는길</a>
+                                        </li>
+                                    </ul>
+                                </div> <!--submenu_text-->
+                            </div> <!--inner_submenu-->
+                        </div> <!--submenu-->
+                    </div> <!--nav-->
+                </div> <!--gnb-->
+            </div> <!--inner-->
+        </div> <!--header-->
+        <div id="banner">
+            <div class="inner">
+                <div class="code code--left title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h2>Program</h2>
+                    <p>다양한 전시와 행사를 공간혜윰에서 만나보세요</p>
+                </div> <!--title-->
+            </div> <!--inner-->
+        </div> <!--banner-->
+        <div id="program">
+            <div class="inner">
+                <ul class="contents">
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster01.jpg" alt="poster">
+                        </div> <!--poster-->
+                        <div class="info">
+                            <h3 class="program_tt">2023 부산바다 사진전</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 08. 01 ~ 2023. 09. 30</p>
+                        </div> <!--info-->
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>2023<br>부산바다 사진전</h3>
+                                <p>부산에서 만나는 <br>그 찰나의 시간</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster02.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">미술관에 피는 꽃</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 09. 01 ~ 2023. 10. 31</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>미술관에 피는 꽃</h3>
+                                <p>나라는 꽃이<br>피어날 때</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster03.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">요시고 사진전</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 05. 27 ~ 2023. 10. 08</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>요시고 사진전</h3>
+                                <p>따뜻한 휴일의 기록</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster04.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">Spring Fever</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 09. 27 ~ 2023. 11. 10</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>Spring Fever</h3>
+                                <p>춘곤증</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster05.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">수집 : 위대한 여정</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 09. 23 ~ 2023. 11. 30</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>수집 : 위대한 여정</h3>
+                                <p>이건희컬렉션<br>한국 근현대 미술 특별전</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster06.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">2023 문화예술 플리마켓</h3>
+                            <p class="space">가든 혜윰</p>
+                            <p class="date">2023. 09. 21 ~ 2023. 09. 23</p>
+                        </div>
+                        <span class="label event">행사</span>
+                        <div class="cover event_cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>2023<br>문화예술 플리마켓</h3>
+                                <p>ART PICNIC</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster07.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">BUSAN DESIGN WEEK</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 09. 17 ~ 2023. 09. 20</p>
+                        </div>
+                        <span class="label event">행사</span>
+                        <div class="cover event_cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>BUSAN<br>DESIGN WEEK</h3>
+                                <p>부산 디자인 위크</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster08.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">페스티벌 시옷 기획전시</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 08. 21 ~ 2023. 10. 13</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>페스티벌 시옷</h3>
+                                <p>시민 작품 공모 기획전시</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Programmore_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster09.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">우리들의 여름이야기</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 08. 01 ~ 2023. 09. 03</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>우리들의<br>여름이야기</h3>
+                                <p></p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster10.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">Henri Matisse</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 07. 09 ~ 2023. 10. 30</p>
+                            
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>Henri Matisse</h3>
+                                <p>Life and Joy</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster11.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">꽃이랑 놀자</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 05. 07 ~ 2023. 09. 06</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>꽃이랑 놀자</h3>
+                                <p>고대로 떠나는 꽃여행</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster12.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">2023 원하는대로 버스킹</h3>
+                            <p class="space">가든 혜윰</p>
+                            <p class="date">2023. 04. ~ 2023. 11.</p>
+                        </div>
+                        <span class="label event">행사</span>
+                        <div class="cover event_cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>2023<br>원하는대로 버스킹</h3>
+                                <p>원하는 대로 버스킹이<br>찾아갑니다</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster13.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">미래교육 인사이트 북콘서트</h3>
+                            <p class="space">혜윰도서관</p>
+                            <p class="date">2023. 07. 20</p>
+                        </div>
+                        <span class="label event">행사</span>
+                        <div class="cover end_cover">
+                            <div>
+                                <h3>종료된<br>프로그램입니다</h3>
+                                <p>다음에 다시 만나요 :)</p>
+                            </div>
+                        </div> <!--cover end_cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster14.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">2023 부산 버스킹 페스타</h3>
+                            <p class="space">공간혜윰 마당</p>
+                            <p class="date">2023. 07. 01</p>
+                        </div>
+                        <span class="label event">행사</span>
+                        <div class="cover end_cover">
+                            <div>
+                                <h3>종료된<br>프로그램입니다</h3>
+                                <p>다음에 다시 만나요 :)</p>
+                            </div>
+                        </div> <!--cover end_cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster15.jpg" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">제5회 오버더레인보우</h3>
+                            <p class="space">갤러리혜윰</p>
+                            <p class="date">2023. 06. 01 ~ 2023. 07. 29</p>
+                        </div>
+                        <span class="label exhibition">전시</span>
+                        <div class="cover">
+                            <a href="#">
+                                <div class="bar"></div>
+                                <h3>제5회<br>오버더레인보우</h3>
+                                <p>12인 12색</p>
+                                <div>
+                                    <span>자세히보기</span>
+                                    <img src="./images/Program/more_arrow.png" alt="more">
+                                </div>
+                            </a>
+                        </div> <!--cover-->
+                    </li>
+                    <li>
+                        <div class="poster">
+                            <img src="./images/Program/poster16.png" alt="poster">
+                        </div>
+                        <div class="info">
+                            <h3 class="program_tt">반짝반짝 하잖아</h3>
+                            <p class="space">커뮤니티룸 라운지</p>
+                            <p class="date">2023. 01. 27</p>
+                        </div>
+                        <span class="label event">행사</span>
+                        <div class="cover end_cover">
+                            <div>
+                                <h3>종료된<br>프로그램입니다</h3>
+                                <p>다음에 다시 만나요 :)</p>
+                            </div>
+                        </div> <!--cover end_cover-->
+                    </li>
+                </ul> <!--contents-->
+                <ul class="page">
+                    <li><a href="./program.html#program"><div>←</div></a></li>
+                    <li><a href="./program.html#program"><div class="pg_n">1</div></a></li>
+                    <li><a href="./program.html#program"><div class="pg_n">2</div></a></li>
+                    <li><a href="./program.html#program"><div class="pg_n">3</div></a></li>
+                    <li><a href="./program.html#program"><div>→</div></a></li>
+                </ul> <!--page-->
+            </div> <!--inner-->
+        </div> <!--program-->
+        <div id="footer">
+            <div class="inner">
+                <div class="f_logo">
+                    <img src="./images/footer/footer_logo.png" alt="footer_logo">
+                </div>
+                <div class="footer_txt">
+                    <ul class="link">
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">영상정보처리운영관리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이메일정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                    </ul>
+                    <p>부산광역시 기장군 기장읍 기장해안로 200 공간혜윰 &nbsp;&nbsp; spacehyeyum@email.com &nbsp;&nbsp; 문의 051)123-4567
+                    </p>
+                    <p>Copyright © SPACEHYEYUM All Rights Reserved.</p>
+                </div> <!--footer_txt-->
+                <ul class="sns">
+                    <li>
+                        <a href="#">
+                            <img src="./images/footer/insta_icon.png" alt="insta_icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/footer/youtube_icon.png" alt="youtube_icon">
+                        </a>
+                    </li>
+                </ul>
+            </div> <!--inner-->
+        </div> <!--footer-->
+        <div id="top_btn">
+            <a href="#wrap"></a>
+        </div> <!--top_btn-->
+    </div> <!--wrap-->
+
+    <!-- AOS js CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- js 제어 -->
+    <script src="./js/program_script.js"></script>
+</body>
