@@ -238,15 +238,16 @@ body {
 
 /* 공통 */
 .content_title {
-    margin-top: 100px;
-    padding: 60px 0 30px;
+    padding: 190px 0 30px;
 }
+
 .left_title {
     font-size: 42px;
     color: #3D5C92;
     display: inline-block;
     margin-right: 40px;
 }
+
 .left_engtitle {
     font-size: 35px;
     color: #ccc;
@@ -255,35 +256,315 @@ body {
 
 
 /* guide */
-#guide{
+#guide {
     background: url(../images/Use/guide_bg.jpg) no-repeat center;
     height: 1647px;
 }
 
-.guide_wrap{
-    margin-top: 50px;
+#guide .inner {
+    position: relative;
+    height: 1647px;
 }
-table th div{
+
+.guide_wrap {
+    margin-top: 40px;
+}
+
+.guide_icon {
     display: inline-block;
     margin-right: 8px;
     vertical-align: middle;
 }
-table th img{
+
+.guide_icon img {
     display: block;
     width: 18px;
     height: 18px;
 }
-table th{
+
+.guide_wrap th {
+    width: 190px;
     font-size: 18px;
-
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    vertical-align: top;
+    padding-top: 30px;
 }
 
-table li{
+.guide_wrap .blank {
+    width: 30px;
+}
+
+.guide_wrap .underline {
+    width: 495px;
+    border-bottom: 2px solid #ddd;
+    padding: 25px 0;
+}
+
+.guide_wrap li {
     list-style: disc;
-    margin-left: 50px;
+    margin-left: 30px;
+    padding: 6px 0;
+}
+
+.photo_line {
+    width: 500px;
+    height: 700px;
+    border: 2px solid #3d5c9291;
+    border-radius: 250px 250px 0 0;
+    position: absolute;
+    bottom: 400px;
+    right: 22px;
+    z-index: 1;
+}
+
+.guide_photo {
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    bottom: 380px;
+    right: 0;
+    z-index: 2;
+}
+
+.guide_photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 250px 250px 0 0;
 }
 
 
+/* faq */
+#faq {
+    background: url(../images/Use/faq_bg.jpg) center top;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+
+.faq_wrap {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 50px 70px;
+    box-sizing: border-box;
+}
+
+.font_10 {
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 11px;
+}
+.circle_q{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #3D5C92;
+    margin: 0 30px;
+}
+.circle_q p{
+    width: 26px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.faqs {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0 20px 20px 0;
+}
+
+.faqs ul li:nth-child(1) {
+    text-align: center;
+    width: 80px;
+    float: left;
+}
+
+.faqs ul li:nth-child(2) {
+    width: 700px;
+    float: left;
+}
+
+.faqs ul li:nth-child(3) {
+    width: 70px;
+    float: right;
+    padding-top: 17px;
+}
+
+.faqs>li ul {
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.text_info {
+    background: #fffbf6;
+    border-top: 3px solid #ccc;
+    text-align: left;
+    overflow: hidden;
+}
+
+.text_info div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.faqs>li .text_info {
+    display: none;
+    padding: 30px 0;
+}
+
+.faqs>li .text_info {
+    width: 100%
+}
+
+.notice_line {
+    height: 3px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background: #ccc;
+}
+
+.notice_bg {
+    height: 781px
+}
+
+.faqs .font_18 {
+    position: relative;
+    height: 50px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.faqs .font_18 .noc_po {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.turn {
+    transform: rotate(180deg);
+}
+
+.plus img {
+    transition: transform 0.5s;
+}
+
+.circle_a{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #eb9128;
+    margin: 0 50px;
+}
+.answer {
+    width: 26px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.answer_wrap p{
+    font-size: 16px;
+}
+
+
+/* map */
+#map{
+    height: 1250px;
+}
+
+.map_wrap{
+    margin-top: 50px;
+}
+
+.place{
+    width: 830px;
+    height: 800px;
+    float: left;
+}
+.wrap_controllers{
+    display: none;
+}
+
+.map_text{
+    width: 400px;
+    float: right;
+}
+.map_text h2{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.map_tt p{
+    display: inline-block;
+}
+.map_tt p img{
+    display: block;
+    height: 28px;
+    margin-right: 10px;
+}
+.adress{
+    margin-bottom: 10px;
+}
+.adress img{
+    width: 21px;
+    margin-left: 6px;
+}
+
+.info_box{
+    margin-top: 39px;
+}
+.info_box h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.info_box p{
+    color: #666;
+}
+.parking{
+    font-size: 16px;
+    margin-bottom: 14px;
+    padding-left: 5px;
+}
+.traffic_tt{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;;
+}
+.traffic_tt img{
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding-right: 5px;
+}
+.traffic_tt2{
+    margin: 13px 0 24px;
+}
+.found_btn{
+    text-align: right;
+}
+.found_btn a{
+    display: inline-block;
+    padding: 8px 26px;
+    background-color: #3D5C92;
+    color: #fff;
+    font-size: 16px;
+}
 
 
 /* footer */
