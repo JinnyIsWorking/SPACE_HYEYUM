@@ -40,23 +40,3 @@ $(function () {
     prevScrollTop = nowScrollTop;  // prevScroll, nowScrollTop 조건 판단 후, 현재 스크롤값을 prevScrollTop 에 저장
   });
 });
-
-
-// FAQ toggle
-$(function () {
-  $(".faqs> li> .font0").click(function () {
-    $(this).next().slideToggle();
-    $('.c p').toggleClass('ab');
-  });
-  $(".faqs> li> .font1").click(function () {
-    $(this).next().slideToggle();
-    $('.d p').toggleClass('ab');
-  });
-});
-
-$(function () {
-  $(".faqs> li> ul").click(function () {
-    $(this).children().children("img").toggleClass("turn");
-  });
-});
-
