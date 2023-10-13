@@ -110,6 +110,7 @@ body {
 .util li a {
     display: block;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     padding-right: 25px;
     color: #666;
 }
@@ -377,6 +378,7 @@ body {
 }
 .title .left_engtitle{
     font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
     color: #ccc;
     display: inline-block;
     margin-bottom: 100px;
@@ -392,6 +394,7 @@ body {
 }
 .title .center_engtitle{
     font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
     color: #aaa;
 }
 
@@ -517,6 +520,7 @@ body {
 }
 .fc_cover_eng{
     font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: #fff;
     opacity: 0.7;

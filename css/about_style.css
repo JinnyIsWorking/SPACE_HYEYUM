@@ -110,6 +110,7 @@ body {
 .util li a {
     display: block;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     padding-right: 25px;
     color: #666;
 }
@@ -222,6 +223,7 @@ body {
 }
 .title h2{
     font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     margin-bottom: 80px;
 }
@@ -428,6 +430,7 @@ body {
 }
 .left_engtitle{
     font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
     color: #ccc;
     display: inline-block;
 }
@@ -498,6 +501,7 @@ body {
 .color_system li> p{
     font-size: 23px;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
 }
 .p_color .gradation{
