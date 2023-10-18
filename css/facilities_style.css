@@ -303,6 +303,7 @@ body {
 
 .board_wrap {
     position: relative;
+    height: 630px;
 }
 .floor_box {
     width: 100%;
@@ -413,6 +414,14 @@ body {
 .maplink9:hover a{
     font-weight: 600;
     background-color: rgba(0, 0, 0, .1);
+}
+
+.click_txt{
+    position: absolute;
+    bottom: -35px;
+    left: 10px;
+    z-index: 2;
+    color: #565657;
 }
 
 
