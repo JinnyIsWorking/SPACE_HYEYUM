@@ -259,12 +259,10 @@ body {
     color: #ccc;
     display: inline-block;
 }
-
 .facilities_wrap{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
     margin-top: 40px;
 }
 .rent_fac{
@@ -324,11 +322,13 @@ body {
 .rent_fac:hover .btn_circle{
     transform: scale(1.5, 1.5);
 }
+
 .form_link{
-    position: absolute;
-    bottom: -40px;
-    right: 0;
-    z-index: 1;
+    text-align: right;
+}
+.link_wrap{
+    display: inline-block;
+    margin-top: 20px;
 }
 .form_link a{
     display: inline-block;
@@ -475,6 +475,7 @@ body {
     height: 500px;
     background: url(../images/Rental/hyeyum_banner_bg.png) no-repeat center;
     margin-bottom: 150px;
+    overflow: hidden;
 }
 #ad_banner .inner{
     height: 500px;
