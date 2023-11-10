@@ -52,19 +52,63 @@ body {
     position: relative;
 }
 
-/* wrap */
-#wrap {
+
+/* ----------------------------
+   00. wrap 
+   ---------------------------- */
+   #wrap {
     min-width: 1360px;
     position: relative;
 }
 
-/* 공통 */
-.inner {
+
+/* ----------------------------
+   00. 공통
+   ---------------------------- */
+   .inner{
     width: 1280px;
     margin: 0 auto;
 }
 
-/* header */
+.scroll_wrap {
+    overflow: hidden;
+}
+.scroll_on {
+    opacity: 0;
+    transition: all 1s;
+}
+.scroll_on_end {
+    opacity: 0;
+    transition: all 1s;
+}
+.scroll_on.active {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+.scroll_on.type_top {
+    transform: translate(0, -50px);
+}
+.scroll_on.type_bottom {
+    transform: translate(0, 50px);
+}
+.scroll_on.type_left {
+    transform: translate(-50px, 0);
+}
+.scroll_on.type_right {
+    transform: translate(50px, 0);
+}
+
+.d1{
+    transition-delay: 0.1s;
+}
+.d2{
+    transition-delay: 0.2s;
+}
+
+
+/* ----------------------------
+   01. header
+   ---------------------------- */
 #header {
     width: 100%;
     height: 110px;
@@ -175,7 +219,9 @@ body {
 }
 
 
-/* submenu */
+/* ----------------------------
+   01-1. submenu
+   ---------------------------- */
 .submenu {
     position: absolute;
     top: 98px;
@@ -214,7 +260,9 @@ body {
 }
 
 
-/* title banner */
+/* ----------------------------
+   02. title banner
+   ---------------------------- */
 #banner {
     height: 548px;
     background: url(../images/Program/program_title_bg.png) no-repeat center;
@@ -238,7 +286,9 @@ body {
 }
 
 
-/* program */
+/* ----------------------------
+   03. Program
+   ---------------------------- */
 #program{
     height: 2806px;
     background: url(../images/Program/program_bg.jpg) no-repeat center;
@@ -391,8 +441,9 @@ body {
 }
 
 
-
-/* footer */
+/* ----------------------------
+   04. Footer
+   ---------------------------- */
 #footer {
     height: 150px;
     background-color: #3D5C92;
@@ -459,7 +510,9 @@ body {
 }
 
 
-/* top_btn */
+/* ----------------------------
+   05. Top-btn
+   ---------------------------- */
 #top_btn {
     position: fixed;
     bottom: 100px;

@@ -52,19 +52,63 @@ body {
     position: relative;
 }
 
-/* wrap */
-#wrap {
+
+/* ----------------------------
+   00. wrap 
+   ---------------------------- */
+   #wrap {
     min-width: 1360px;
     position: relative;
 }
 
-/* 공통 */
-.inner {
+
+/* ----------------------------
+   00. 공통
+   ---------------------------- */
+   .inner{
     width: 1280px;
     margin: 0 auto;
 }
 
-/* header */
+.scroll_wrap {
+    overflow: hidden;
+}
+.scroll_on {
+    opacity: 0;
+    transition: all 1s;
+}
+.scroll_on_end {
+    opacity: 0;
+    transition: all 1s;
+}
+.scroll_on.active {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+.scroll_on.type_top {
+    transform: translate(0, -50px);
+}
+.scroll_on.type_bottom {
+    transform: translate(0, 50px);
+}
+.scroll_on.type_left {
+    transform: translate(-50px, 0);
+}
+.scroll_on.type_right {
+    transform: translate(50px, 0);
+}
+
+.d1{
+    transition-delay: 0.1s;
+}
+.d2{
+    transition-delay: 0.2s;
+}
+
+
+/* ----------------------------
+   01. header
+   ---------------------------- */
 #header {
     width: 100%;
     height: 110px;
@@ -175,7 +219,9 @@ body {
 }
 
 
-/* submenu */
+/* ----------------------------
+   01-1. submenu
+   ---------------------------- */
 .submenu {
     position: absolute;
     top: 98px;
@@ -214,7 +260,9 @@ body {
 }
 
 
-/* title banner */
+/* ----------------------------
+   02. title banner
+   ---------------------------- */
 #banner {
     height: 548px;
     background: url(../images/Rental/rental_title_bg.png) no-repeat center;
@@ -238,7 +286,9 @@ body {
 }
 
 
-/*facilities */
+/* ----------------------------
+   03. facilities
+   ---------------------------- */
 #facilities{
     height: 600px;
     padding-top: 50px;
@@ -346,7 +396,9 @@ body {
 }
 
 
-/* process */
+/* ----------------------------
+   04. Process
+   ---------------------------- */
 #process{
     height: 1350px;
     padding: 160px 0;
@@ -459,7 +511,9 @@ body {
 }
 
 
-/* ad_banner */
+/* ----------------------------
+   05. Ad_banner
+   ---------------------------- */
 @keyframes ani-top{
     0%{top: 20px;}
     50%{top: 0;}
@@ -508,7 +562,9 @@ body {
 }
 
 
-/* inquiry */
+/* ----------------------------
+   06. Inquiry
+   ---------------------------- */
 #inquiry{
     height: 815px;
     background: url(../images/Rental/form_bg.jpg) no-repeat center;
@@ -595,7 +651,10 @@ textarea{
     padding: 12px 20px;
 }
 
-/* footer */
+
+/* ----------------------------
+   07. Footer
+   ---------------------------- */
 #footer {
     height: 150px;
     background-color: #3D5C92;
@@ -662,7 +721,9 @@ textarea{
 }
 
 
-/* top_btn */
+/* ----------------------------
+   07. Top_btn
+   ---------------------------- */
 #top_btn {
     position: fixed;
     bottom: 100px;

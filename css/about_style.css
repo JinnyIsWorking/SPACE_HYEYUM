@@ -52,19 +52,63 @@ body {
     position: relative;
 }
 
-/* wrap */
+
+/* ----------------------------
+   00. wrap 
+   ---------------------------- */
 #wrap {
     min-width: 1360px;
     position: relative;
 }
 
-/* 공통 */
+
+/* ----------------------------
+   00. 공통
+   ---------------------------- */
 .inner{
     width: 1280px;
     margin: 0 auto;
 }
 
-/* header */
+.scroll_wrap {
+    overflow: hidden;
+}
+.scroll_on {
+    opacity: 0;
+    transition: all 1s;
+}
+.scroll_on_end {
+    opacity: 0;
+    transition: all 1s;
+}
+.scroll_on.active {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+.scroll_on.type_top {
+    transform: translate(0, -50px);
+}
+.scroll_on.type_bottom {
+    transform: translate(0, 50px);
+}
+.scroll_on.type_left {
+    transform: translate(-50px, 0);
+}
+.scroll_on.type_right {
+    transform: translate(50px, 0);
+}
+
+.d1{
+    transition-delay: 0.1s;
+}
+.d2{
+    transition-delay: 0.2s;
+}
+
+
+/* ----------------------------
+   01. header
+   ---------------------------- */
 #header {
     width: 100%;
     height: 110px;
@@ -173,7 +217,9 @@ body {
 }
 
 
-/* submenu */
+/* ----------------------------
+   01-1. submenu
+   ---------------------------- */
 .submenu {
     position: absolute;
     top: 98px;
@@ -212,7 +258,9 @@ body {
 }
 
 
-/* title banner */
+/* ----------------------------
+   02. title banner
+   ---------------------------- */
 #banner{
     height: 548px;
     background: url(../images/About/title_banner_bg.png) no-repeat center;
@@ -220,6 +268,7 @@ body {
 }
 .title{
     padding-top: 270px;
+    text-align: left;
 }
 .title h2{
     font-size: 80px;
@@ -233,7 +282,9 @@ body {
 }
 
 
-/* about */
+/* ----------------------------
+   03. about
+   ---------------------------- */
 #about{
     height: 2210px;
     background: url(../images/About/about_bg.jpg) no-repeat center top;
@@ -334,7 +385,9 @@ body {
 }
 
 
-/* vision */
+/* ----------------------------
+   04. Vision
+   ---------------------------- */
 #vision{
     height: 1075px;
     position: relative;
@@ -386,7 +439,6 @@ body {
     box-sizing: border-box;
     margin-right: 60px;
     box-shadow: 0 0 14px rgba(0,0,0,0.2);
-    transition: all 0.4s;
 }
 .vision_wrap li:nth-last-child(1){
     margin-right: 0;
@@ -398,7 +450,8 @@ body {
     filter: invert(34%) sepia(70%) saturate(418%) hue-rotate(179deg) brightness(87%) contrast(92%);
 }
 .vision_wrap li:hover{
-    transform: scale(1.05);
+    transform: scale(1.1) !important;
+    transition: all 0.4s;
 }
 .vision_wrap li:hover img{
     filter: invert(62%) sepia(81%) saturate(942%) hue-rotate(342deg) brightness(96%) contrast(91%);
@@ -413,10 +466,15 @@ body {
 }
 
 
-/* brand */
+/* ----------------------------
+   05. Brand
+   ---------------------------- */
 #brand{
     height: 2058px;
     background: url(../images/About/brand_bg.jpg) no-repeat center top;
+}
+#brand .inner{
+    padding-bottom: 60px;
 }
 .content_title{
     padding-top: 380px;
@@ -526,8 +584,9 @@ body {
     padding-top: 10px;
 }
 
-
-/* history */
+/* ----------------------------
+   06. History
+   ---------------------------- */
 #history{
     height: 2022px;
     background: url(../images/About/history_bg.jpg) no-repeat center top;
@@ -653,8 +712,9 @@ body {
     margin-left: 15px;
 }
 
-
-/* footer */
+/* ----------------------------
+   07. Footer
+   ---------------------------- */
 #footer{
     height: 150px;
     background-color: #3D5C92;
@@ -713,8 +773,9 @@ body {
     opacity: 1;
 }
 
-
-/* top_btn */
+/* ----------------------------
+   08. Top-btn
+   ---------------------------- */
 #top_btn{
     position: fixed;
     bottom: 100px;
@@ -732,3 +793,8 @@ body {
 #top_btn a img{
     display: block;
 }
+
+
+
+
+
