@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="./css/facilities_style.css">
     <!-- js code -->
     <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <!-- swiper_css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
@@ -41,7 +39,8 @@
                         <a href="soon.html">ENG</a>
                     </li>
                     <li>
-                        <a href="javascript:return false;"><img src="./images/header/search.svg" alt="search_icon" class="search"></a>
+                        <a href="javascript:return false;"><img src="./images/header/search.svg" alt="search_icon"
+                                class="search"></a>
                     </li>
                 </ul> <!--util-->
                 <div id="gnb">
@@ -123,28 +122,27 @@
             </div> <!--inner-->
         </div> <!--header-->
         <div id="banner">
-            <div class="inner">
-                <div class="code code--left title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="inner scroll_wrap">
+                <div class="scroll_on type_bottom title">
                     <h2>Facilities</h2>
                     <p>공간혜윰의 시설들을 소개합니다</p>
                 </div> <!--title-->
             </div> <!--inner-->
         </div> <!--banner-->
         <div id="floormap">
-            <div class="inner">
-                <div class="code code--left content_title" data-aos="fade-up" data-aos-duration="1500"
-                    data-aos-delay="800">
+            <div class="inner scroll_wrap">
+                <div class="scroll_on type_top content_title">
                     <h2 class="left_title">층별안내</h2>
                     <p class="left_engtitle">Floor Map</p>
                 </div> <!--content_title-->
-                <ul id="button">
+                <ul id="button" class="scroll_on type_top">
                     <li class="tap tablink opacity" onclick="openBoard(event,'Board01')">1층</li>
                     <li class="tap tablink" onclick="openBoard(event,'Board02')">2층</li>
                     <li class="tap tablink" onclick="openBoard(event,'Board03')">3층</li>
                     <li class="tap tablink" onclick="openBoard(event,'Board04')">4층</li>
                     <li class="tap tablink" onclick="openBoard(event,'Board05')">5층</li>
                 </ul>
-                <div class="board_wrap">
+                <div class="board_wrap scroll_on type_top">
                     <div id="Board01" class="floor_box">
                         <div class="floor_info">
                             <h3>1F</h3>
@@ -213,332 +211,319 @@
             </div> <!--inner-->
         </div> <!--floormap-->
         <div id="information">
-            <div class="inner">
-                <div class="code code--left content_title" data-aos="fade-up" data-aos-duration="1500"
-                    data-aos-delay="300">
+            <div class="inner scroll_wrap">
+                <div class="scroll_on type_top content_title">
                     <h2 class="left_title">공간안내</h2>
                     <p class="left_engtitle">Facilities Information</p>
                 </div> <!--content_title-->
                 <div class="contents">
-                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                        <div id="cafe" class="content">
-                            <div id="slide">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/cafe1.jpg" alt="cafe">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/cafe2.jpg" alt="cafe">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/cafe3.jpg" alt="cafe">
-                                        </div>
+                    <div id="cafe" class="content scroll_on type_top">
+                        <div id="slide">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/cafe1.jpg" alt="cafe">
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
-                                </div> <!--swiper-->
-                            </div> <!--slide-->
-                            <div class="content_text">
-                                <div class="text_left">
-                                    <h2>카페 혜윰</h2>
-                                    <p>
-                                        공간혜윰을 가장 먼저 맞이하는 공간으로 넓은 공간을 활용해 단체모임, 대관 예약도 가능한 만능 카페입니다.
-                                        <br>고급 원두를 기본 베이스로 한 카페 혜윰의 다양한 커피 및 디저트를 경험해보세요!
-                                    </p>
-                                </div> <!--text_left-->
-                                <div class="text_right">
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_time.png" alt="icon">
-                                        <strong>운영시간</strong>
-                                        <p>매일 09:00 ~ 21:00 (Last Order 20:00)
-                                            <br>대관일 경우 좌석이용이 불가 할 수 있습니다.
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_call.png" alt="icon">
-                                        <strong>이용문의</strong>
-                                        <p>070 - 1234 - 0000
-                                            <br>문의가능시간 09:00 ~ 20:00
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                </div> <!--text_right-->
-                            </div> <!--content_text-->
-                        </div> <!--contents cafe-->
-                    </div> <!--AOS_effect-->
-                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div id="designstore" class="content">
-                            <div id="slide">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/design_store1.jpg" alt="designstore">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/design_store2.jpg" alt="designstore">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/design_store3.jpg" alt="designstore">
-                                        </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/cafe2.jpg" alt="cafe">
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
-                                </div> <!--swiper-->
-                            </div> <!--slide-->
-                            <div class="content_text">
-                                <div class="text_left">
-                                    <h2>디자인 스토어</h2>
-                                    <p>
-                                        다양한 아티스트들과 브랜드가 입접하여 핫한 아이템들을 상시 만날 수 있는 트렌디 소품샵으로
-                                        <br>전시 굿즈도 함께 만나볼 수 있습니다!
-                                    </p>
-                                </div> <!--text_left-->
-                                <div class="text_right">
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_time.png" alt="icon">
-                                        <strong>운영시간</strong>
-                                        <p>매일 09:00 ~ 21:00
-                                            <br>전시 굿즈는 해당 전시기간 중에만
-                                            <br>구매 가능합니다.
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_call.png" alt="icon">
-                                        <strong>이용문의</strong>
-                                        <p>070 - 1234 - 5555
-                                            <br>문의가능시간 09:00 ~ 18:00
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                </div> <!--text_right-->
-                            </div> <!--content_text-->
-                        </div> <!--contents designstore-->
-                    </div> <!--AOS_effect-->
-                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div id="gallery" class="content">
-                            <div id="slide">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/gallery1.jpg" alt="gallery">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/gallery2.jpg" alt="gallery">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/gallery3.jpg" alt="gallery">
-                                        </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/cafe3.jpg" alt="cafe">
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
-                                </div> <!--swiper-->
-                            </div> <!--slide-->
-                            <div class="content_text">
-                                <div class="text_left">
-                                    <h2>갤러리 혜윰</h2>
-                                    <p>
-                                        공간혜윰의 모든 예술적 영감이 응축된 갤러리 혜윰은 방문객에게 영감을 주는 감각적인 문화 예술 공간입니다.
-                                        <br>공간혜윰의 다양한 가치를 전달하는 갤러리, 성장하는 아티스트를 지원하는 갤러리로써 예술적 영감이 한 데 모여
-                                        <br>나만의 감각을 키워나가는 예술 공간입니다.
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!--swiper-->
+                        </div> <!--slide-->
+                        <div class="content_text">
+                            <div class="text_left">
+                                <h2>카페 혜윰</h2>
+                                <p>
+                                    공간혜윰을 가장 먼저 맞이하는 공간으로 넓은 공간을 활용해 단체모임, 대관 예약도 가능한 만능 카페입니다.
+                                    <br>고급 원두를 기본 베이스로 한 카페 혜윰의 다양한 커피 및 디저트를 경험해보세요!
+                                </p>
+                            </div> <!--text_left-->
+                            <div class="text_right">
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_time.png" alt="icon">
+                                    <strong>운영시간</strong>
+                                    <p>매일 09:00 ~ 21:00 (Last Order 20:00)
+                                        <br>대관일 경우 좌석이용이 불가 할 수 있습니다.
                                     </p>
-                                    <a href="rental.html" class="content_btn">대관안내</a>
-                                </div> <!--text_left-->
-                                <div class="text_right">
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_object.png" alt="icon">
-                                        <strong>주요용도</strong>
-                                        <p>전시 및 각종 프로모션 행사</p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_area.png" alt="icon">
-                                        <strong>공간면적</strong>
-                                        <p>갤러리 전체 1,487㎡ / 450평
-                                            <br>갤러리1관 957㎡ / 290평
-                                            <br>갤러리2관 530㎡ / 160평
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_time.png" alt="icon">
-                                        <strong>운영시간</strong>
-                                        <p>월 - 금 10:00 ~ 20:00
-                                            <br>토,일,공휴일 10:00 ~ 21:00
-                                            <br>휴관일은 공지사항을 참고하시기 바랍니다.
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_call.png" alt="icon">
-                                        <strong>이용문의</strong>
-                                        <p>070 - 1234 - 6666
-                                            <br>문의가능시간 10:00 ~ 20:00
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                </div> <!--text_right-->
-                            </div> <!--content_text-->
-                        </div> <!--contents gallery-->
-                    </div> <!--AOS_effect-->
-                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div id="community" class="content">
-                            <div id="slide">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/community1.jpg" alt="community">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/community2.jpg" alt="community">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/community3.jpg" alt="community">
-                                        </div>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_call.png" alt="icon">
+                                    <strong>이용문의</strong>
+                                    <p>070 - 1234 - 0000
+                                        <br>문의가능시간 09:00 ~ 20:00
+                                    </p>
+                                </div> <!--text_wrap-->
+                            </div> <!--text_right-->
+                        </div> <!--content_text-->
+                    </div> <!--contents cafe-->
+                    <div id="designstore" class="content scroll_on type_top">
+                        <div id="slide">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/design_store1.jpg" alt="designstore">
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
-                                </div> <!--swiper-->
-                            </div> <!--slide-->
-                            <div class="content_text">
-                                <div class="text_left">
-                                    <h2>커뮤니티룸</h2>
-                                    <p>
-                                        기존의 공간에서 벗어나 새로운 공간에서의 비즈니스, 부족한 공간을 제공하여 효율적인 업무와 소통을 지향합니다.
-                                        <br>회의실 형태로 구성되어 있으며 회의, 모임 혹은 업무공간까지 다양한 용도로 대관하여 사용 가능합니다.
-                                    </p>
-                                    <a href="rental.html" class="content_btn">대관안내</a>
-                                </div> <!--text_left-->
-                                <div class="text_right">
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_object.png" alt="icon">
-                                        <strong>주요용도</strong>
-                                        <p>비즈니스, 회의, 스터디 등
-                                            <br>각종 모임 또는 업무공간
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_area.png" alt="icon">
-                                        <strong>공간면적</strong>
-                                        <p>커뮤니티 전체 595㎡ / 180평
-                                            <br>라운지 278㎡ / 84평
-                                            <br>미팅룸 18㎡ / 6평
-                                            <br>스터디룸 10㎡ / 3평
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_time.png" alt="icon">
-                                        <strong>운영시간</strong>
-                                        <p>월 - 금 10:00 ~ 21:00
-                                            <br>토,일,공휴일 11:00 ~ 20:00
-                                            <br>휴관일은 공지사항을 참고하시기 바랍니다.
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_call.png" alt="icon">
-                                        <strong>이용문의</strong>
-                                        <p>070 - 1234 - 7777
-                                            <br>문의가능시간 10:00 ~ 20:00
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                </div> <!--text_right-->
-                            </div> <!--content_text-->
-                        </div> <!--contents community-->
-                    </div> <!--AOS_effect-->
-                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div id="library" class="content">
-                            <div id="slide">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/library1.jpg" alt="library">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/library2.jpg" alt="library">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/library3.jpg" alt="library">
-                                        </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/design_store2.jpg" alt="designstore">
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
-                                </div> <!--swiper-->
-                            </div> <!--slide-->
-                            <div class="content_text">
-                                <div class="text_left">
-                                    <h2>혜윰도서관</h2>
-                                    <p>
-                                        쉼이 필요할 때 언제든지 편히 방문하여 독서와 함께 휴식을 취할 수 있도록 국내외 다양한 서적들을 준비한 장소입니다.
-                                        <br>소그룹 모임도 즐길 수 있는 혜윰도서관에 방문하여 낭만적인 시간을 보내보세요.
-                                    </p>
-                                </div> <!--text_left-->
-                                <div class="text_right">
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_time.png" alt="icon">
-                                        <strong>운영시간</strong>
-                                        <p>월 - 금 10:00 ~ 20:00
-                                            <br>토,일,공휴일 10:00 ~ 21:00
-                                            <br>휴관일은 공지사항 참고하시기 바랍니다.
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_call.png" alt="icon">
-                                        <strong>이용문의</strong>
-                                        <p>070 - 1234 - 8888
-                                            <br>문의가능시간 10:00 ~ 20:00
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                </div> <!--text_right-->
-                            </div> <!--content_text-->
-                        </div> <!--contents library-->
-                    </div> <!--AOS_effect-->
-                    <div class="code code--left" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div id="garden" class="content">
-                            <div id="slide">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/garden1.jpg" alt="garden">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/garden2.jpg" alt="garden">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./images/Facilities/garden3.jpg" alt="garden">
-                                        </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/design_store3.jpg" alt="designstore">
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-pagination"></div>
-                                </div> <!--swiper-->
-                            </div> <!--slide-->
-                            <div class="content_text">
-                                <div class="text_left">
-                                    <h2>가든 혜윰</h2>
-                                    <p>
-                                        밝은 한낮부터 저녁에 지는 노을의 낭만까지 하늘과 가장 넓게 맞닿은 자연의 공간에서 특별한 시간을 보낼 수 있습니다.
-                                        <br>다양한 야외 행사가 열 수 있는 공간이기도 하여 봄, 가을 각종 야외 행사로 많은 사랑을 받고 있습니다.
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!--swiper-->
+                        </div> <!--slide-->
+                        <div class="content_text">
+                            <div class="text_left">
+                                <h2>디자인 스토어</h2>
+                                <p>
+                                    다양한 아티스트들과 브랜드가 입접하여 핫한 아이템들을 상시 만날 수 있는 트렌디 소품샵으로
+                                    <br>전시 굿즈도 함께 만나볼 수 있습니다!
+                                </p>
+                            </div> <!--text_left-->
+                            <div class="text_right">
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_time.png" alt="icon">
+                                    <strong>운영시간</strong>
+                                    <p>매일 09:00 ~ 21:00
+                                        <br>전시 굿즈는 해당 전시기간 중에만
+                                        <br>구매 가능합니다.
                                     </p>
-                                </div> <!--text_left-->
-                                <div class="text_right">
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_time.png" alt="icon">
-                                        <strong>운영시간</strong>
-                                        <p>매일 10:00 ~ 21:00
-                                            <br>기상에 따른 개방 유무는
-                                            <br>공지사항을 참고하시기 바랍니다.
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                    <div class="text_wrap">
-                                        <img src="./images/Facilities/icon_call.png" alt="icon">
-                                        <strong>이용문의</strong>
-                                        <p>070 - 1234 - 9999
-                                            <br>문의가능시간 09:00 ~ 18:00
-                                        </p>
-                                    </div> <!--text_wrap-->
-                                </div> <!--text_right-->
-                            </div> <!--content_text-->
-                        </div> <!--contents garden-->
-                    </div> <!--AOS_effect-->
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_call.png" alt="icon">
+                                    <strong>이용문의</strong>
+                                    <p>070 - 1234 - 5555
+                                        <br>문의가능시간 09:00 ~ 18:00
+                                    </p>
+                                </div> <!--text_wrap-->
+                            </div> <!--text_right-->
+                        </div> <!--content_text-->
+                    </div> <!--contents designstore-->
+                    <div id="gallery" class="content scroll_on type_top">
+                        <div id="slide">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/gallery1.jpg" alt="gallery">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/gallery2.jpg" alt="gallery">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/gallery3.jpg" alt="gallery">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!--swiper-->
+                        </div> <!--slide-->
+                        <div class="content_text">
+                            <div class="text_left">
+                                <h2>갤러리 혜윰</h2>
+                                <p>
+                                    공간혜윰의 모든 예술적 영감이 응축된 갤러리 혜윰은 방문객에게 영감을 주는 감각적인 문화 예술 공간입니다.
+                                    <br>공간혜윰의 다양한 가치를 전달하는 갤러리, 성장하는 아티스트를 지원하는 갤러리로써 예술적 영감이 한 데 모여
+                                    <br>나만의 감각을 키워나가는 예술 공간입니다.
+                                </p>
+                                <a href="rental.html" class="content_btn">대관안내</a>
+                            </div> <!--text_left-->
+                            <div class="text_right">
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_object.png" alt="icon">
+                                    <strong>주요용도</strong>
+                                    <p>전시 및 각종 프로모션 행사</p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_area.png" alt="icon">
+                                    <strong>공간면적</strong>
+                                    <p>갤러리 전체 1,487㎡ / 450평
+                                        <br>갤러리1관 957㎡ / 290평
+                                        <br>갤러리2관 530㎡ / 160평
+                                    </p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_time.png" alt="icon">
+                                    <strong>운영시간</strong>
+                                    <p>월 - 금 10:00 ~ 20:00
+                                        <br>토,일,공휴일 10:00 ~ 21:00
+                                        <br>휴관일은 공지사항을 참고하시기 바랍니다.
+                                    </p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_call.png" alt="icon">
+                                    <strong>이용문의</strong>
+                                    <p>070 - 1234 - 6666
+                                        <br>문의가능시간 10:00 ~ 20:00
+                                    </p>
+                                </div> <!--text_wrap-->
+                            </div> <!--text_right-->
+                        </div> <!--content_text-->
+                    </div> <!--contents gallery-->
+                    <div id="community" class="content scroll_on type_top">
+                        <div id="slide">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/community1.jpg" alt="community">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/community2.jpg" alt="community">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/community3.jpg" alt="community">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!--swiper-->
+                        </div> <!--slide-->
+                        <div class="content_text">
+                            <div class="text_left">
+                                <h2>커뮤니티룸</h2>
+                                <p>
+                                    기존의 공간에서 벗어나 새로운 공간에서의 비즈니스, 부족한 공간을 제공하여 효율적인 업무와 소통을 지향합니다.
+                                    <br>회의실 형태로 구성되어 있으며 회의, 모임 혹은 업무공간까지 다양한 용도로 대관하여 사용 가능합니다.
+                                </p>
+                                <a href="rental.html" class="content_btn">대관안내</a>
+                            </div> <!--text_left-->
+                            <div class="text_right">
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_object.png" alt="icon">
+                                    <strong>주요용도</strong>
+                                    <p>비즈니스, 회의, 스터디 등
+                                        <br>각종 모임 또는 업무공간
+                                    </p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_area.png" alt="icon">
+                                    <strong>공간면적</strong>
+                                    <p>커뮤니티 전체 595㎡ / 180평
+                                        <br>라운지 278㎡ / 84평
+                                        <br>미팅룸 18㎡ / 6평
+                                        <br>스터디룸 10㎡ / 3평
+                                    </p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_time.png" alt="icon">
+                                    <strong>운영시간</strong>
+                                    <p>월 - 금 10:00 ~ 21:00
+                                        <br>토,일,공휴일 11:00 ~ 20:00
+                                        <br>휴관일은 공지사항을 참고하시기 바랍니다.
+                                    </p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_call.png" alt="icon">
+                                    <strong>이용문의</strong>
+                                    <p>070 - 1234 - 7777
+                                        <br>문의가능시간 10:00 ~ 20:00
+                                    </p>
+                                </div> <!--text_wrap-->
+                            </div> <!--text_right-->
+                        </div> <!--content_text-->
+                    </div> <!--contents community-->
+                    <div id="library" class="content scroll_on type_top">
+                        <div id="slide">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/library1.jpg" alt="library">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/library2.jpg" alt="library">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/library3.jpg" alt="library">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!--swiper-->
+                        </div> <!--slide-->
+                        <div class="content_text">
+                            <div class="text_left">
+                                <h2>혜윰도서관</h2>
+                                <p>
+                                    쉼이 필요할 때 언제든지 편히 방문하여 독서와 함께 휴식을 취할 수 있도록 국내외 다양한 서적들을 준비한 장소입니다.
+                                    <br>소그룹 모임도 즐길 수 있는 혜윰도서관에 방문하여 낭만적인 시간을 보내보세요.
+                                </p>
+                            </div> <!--text_left-->
+                            <div class="text_right">
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_time.png" alt="icon">
+                                    <strong>운영시간</strong>
+                                    <p>월 - 금 10:00 ~ 20:00
+                                        <br>토,일,공휴일 10:00 ~ 21:00
+                                        <br>휴관일은 공지사항 참고하시기 바랍니다.
+                                    </p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_call.png" alt="icon">
+                                    <strong>이용문의</strong>
+                                    <p>070 - 1234 - 8888
+                                        <br>문의가능시간 10:00 ~ 20:00
+                                    </p>
+                                </div> <!--text_wrap-->
+                            </div> <!--text_right-->
+                        </div> <!--content_text-->
+                    </div> <!--contents library-->
+                    <div id="garden" class="content scroll_on type_top">
+                        <div id="slide">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/garden1.jpg" alt="garden">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/garden2.jpg" alt="garden">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/Facilities/garden3.jpg" alt="garden">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div> <!--swiper-->
+                        </div> <!--slide-->
+                        <div class="content_text">
+                            <div class="text_left">
+                                <h2>가든 혜윰</h2>
+                                <p>
+                                    밝은 한낮부터 저녁에 지는 노을의 낭만까지 하늘과 가장 넓게 맞닿은 자연의 공간에서 특별한 시간을 보낼 수 있습니다.
+                                    <br>다양한 야외 행사가 열 수 있는 공간이기도 하여 봄, 가을 각종 야외 행사로 많은 사랑을 받고 있습니다.
+                                </p>
+                            </div> <!--text_left-->
+                            <div class="text_right">
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_time.png" alt="icon">
+                                    <strong>운영시간</strong>
+                                    <p>매일 10:00 ~ 21:00
+                                        <br>기상에 따른 개방 유무는
+                                        <br>공지사항을 참고하시기 바랍니다.
+                                    </p>
+                                </div> <!--text_wrap-->
+                                <div class="text_wrap">
+                                    <img src="./images/Facilities/icon_call.png" alt="icon">
+                                    <strong>이용문의</strong>
+                                    <p>070 - 1234 - 9999
+                                        <br>문의가능시간 09:00 ~ 18:00
+                                    </p>
+                                </div> <!--text_wrap-->
+                            </div> <!--text_right-->
+                        </div> <!--content_text-->
+                    </div> <!--contents garden-->
                 </div> <!--contents-->
             </div> <!--inner-->
         </div> <!--information-->
@@ -585,11 +570,6 @@
         </div> <!--top_btn-->
     </div> <!--wrap-->
 
-    <!-- AOS js CDN -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- js 제어 -->
