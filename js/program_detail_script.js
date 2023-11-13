@@ -63,7 +63,7 @@ $(document).ready(function () {
           const contentHeight = rect.bottom - rect.top; // 요소의 높이
 
           // 요소가 화면에 특정 비율만큼 노출될 때 처리합니다.
-          if (rect.top <= winHeight - (contentHeight * exposurePercentage / 150) && rect.bottom >= (contentHeight * exposurePercentage / 150)) {
+          if (rect.top <= winHeight - (contentHeight * exposurePercentage / 250) && rect.bottom >= (contentHeight * exposurePercentage / 250)) {
               $el.addClass('active');
           }
           // 요소가 화면에서 완전히 사라졌을 때 처리합니다.
