@@ -617,13 +617,15 @@ body {
 }
 
 .visitor ul {
-    display: inline-block;
+    width: 96%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.visitor ul li {
-    float: left;
-    margin-right: 100px;
+.visitor ul li{
+    width: 25%;
 }
 
 .visitor ul li:nth-last-child(1) {
@@ -632,6 +634,15 @@ body {
 
 .visitor_list {
     color: #fff;
+    position: relative;
+}
+
+.visitor_list span{
+    display: inline-block;
+    margin-left: 115px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #EB9128;
 }
 
 .visitor_tt {
@@ -639,9 +650,10 @@ body {
     margin: 25px 0 50px;
 }
 
-.count {
+.counter {
     font-size: 70px;
     font-weight: 700;
+    margin: 0 auto;
     color: #EB9128;
 }
 
