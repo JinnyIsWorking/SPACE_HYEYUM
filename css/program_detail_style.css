@@ -290,7 +290,7 @@ body {
     border: 10px solid #fff;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
     float: left;
-    margin-right: 80px;
+    margin-right: 100px;
 }
 .poster img{
     display: block;
@@ -298,7 +298,7 @@ body {
 }
 .text{
     float: left;
-    width: 630px;
+    width: 616px;
     color: #fff;
     margin-top: 50px;
     position: relative;
@@ -335,7 +335,7 @@ table td{
 .icon{
     position: absolute;
     bottom: 150px;
-    right: 0;
+    right: 60px;
     z-index: 1;
 }
 .icon li{

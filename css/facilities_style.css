@@ -71,7 +71,7 @@ body {
 }
 
 .scroll_wrap {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .scroll_on {
     opacity: 0;
